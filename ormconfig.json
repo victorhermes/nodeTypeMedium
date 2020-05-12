@@ -4,5 +4,9 @@
     "port": 5432,
     "username": "postgres",
     "password": "docker",
-    "database": "nodetypemedium"
+    "database": "nodetypemedium",
+    "migrations": ["./src/database/migrations/*.ts"],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
 }
